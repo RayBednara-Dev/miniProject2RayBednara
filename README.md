@@ -68,8 +68,6 @@ ray.bednara@gmail.com
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
 ## AI Usage
 
 I used Claude Code to write `stocks.py`: pulling stock data with yfinance, storing it in
