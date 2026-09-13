@@ -56,22 +56,6 @@ def main():
         plt.close(fig)
         print(f"Saved {out_path}")
 
-    # Combined comparison chart
-    fig, ax = plt.subplots(figsize=(10, 6))
-    for i, (ticker, name) in enumerate(TICKERS.items()):
-        ax.plot(date_labels, prices[i], marker="o", label=f"{name} ({ticker})")
-    ax.set_title("Closing Prices - Last 10 Trading Days")
-    ax.set_xlabel("Date")
-    ax.set_ylabel("Closing Price (USD)")
-    ax.legend()
-    ax.grid(True, alpha=0.3)
-    fig.tight_layout()
-
-    combined_path = os.path.join(CHARTS_DIR, "combined.png")
-    fig.savefig(combined_path)
-    plt.close(fig)
-    print(f"Saved {combined_path}")
-
 
 if __name__ == "__main__":
     main()
